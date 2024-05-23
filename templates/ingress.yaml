@@ -12,7 +12,7 @@ spec:
         paths:
          - backend:
             service:
-              name: helm-demo-service
+              name: {{ .Release.Name }}-service
               port:
                number: 80
            path:  /
